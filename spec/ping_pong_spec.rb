@@ -3,15 +3,15 @@ require('ping_pong')
 
 describe('Fixnum#ping_pong') do
  it("counts up to the inputted number") do
-   expect((2).ping_pong()).to(eq([1,2]))
+   expect(2.ping_pong).to(eq([1,2]))
  end
 end
 
-describe('Fixnum#ping_pong') do
-  it("replaces numbers that are divisible by 15 with the word pingpong, numbers divisible by 5 with pong, and numbers divisible by 3 with ping") do
-    expect((15).ping_pong()).to(eq([1,2,"ping",4,"pong","ping",7,8,"ping","pong",11,"ping",13,14,"pingpong"]))
-  end
-end
+# describe('Fixnum#ping_pong') do
+#   it("replaces numbers that are divisible by 15 with the word pingpong, numbers divisible by 5 with pong, and numbers divisible by 3 with ping") do
+#     expect((15).ping_pong()).to(eq([1,2,"ping",4,"pong","ping",7,8,"ping","pong",11,"ping",13,14,"pingpong"]))
+#   end
+# end
 
 #
 # The program allows the user to enter a number |*enter* number | |
